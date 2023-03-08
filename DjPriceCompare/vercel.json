@@ -1,0 +1,12 @@
+{
+    "builds":[{
+        "src" : "DjPriceCompare/wsgi.py",
+        "use": "@vervel/python ",
+        "config"  : { "maxLamdaSize" :"15mb",
+    "runtime": "python 3.11.1"}
+    }],
+    "routes":[{
+        "src":"/(.*)",
+        "dest":"DjPriceCompare/wsgi.py"
+    }]
+}
